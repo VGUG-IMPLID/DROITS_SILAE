@@ -1,0 +1,367 @@
+<html>
+
+<body>
+
+  <head>
+    <meta charset="utf-8">
+    <title>COMPTABLE</title>
+    <style>
+      body {
+        font-family: "Century Gothic", sans-serif;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100 vw;
+        list-style-type: none;
+      }
+
+      li {
+        color: #fff;
+        background-color: #2B627B;
+        border-radius: 5px;
+        padding: 20px 10px;
+      }
+
+      li:nth-child(1) {
+        background-color: #E94C2C;
+      }
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+
+  <ul class="tab-labels">
+    <li><a
+        href="file:///C:/Users/VGUG/OneDrive%20-%20IMPLID/Documents/SOCIAL/Silae/Cartographie%20des%20droits%20utilisateurs%20Silae/COMPTABLE.html">COMPTABLE</a>
+    </li>
+    <li><a
+        href="file:///C:/Users/VGUG/OneDrive%20-%20IMPLID/Documents/SOCIAL/Silae/Cartographie%20des%20droits%20utilisateurs%20Silae/GESTIONNAIRE DSI.html">GESTIONNAIRE
+        DSI</a></li>
+    <li><a
+        href="file:///C:/Users/VGUG/OneDrive%20-%20IMPLID/Documents/SOCIAL/Silae/Cartographie%20des%20droits%20utilisateurs%20Silae/GESTIONNAIRE PAIE.html">GESTIONNAIRE
+        PAIE</a></li>
+    <li><a
+        href="file:///C:/Users/VGUG/OneDrive%20-%20IMPLID/Documents/SOCIAL/Silae/Cartographie%20des%20droits%20utilisateurs%20Silae/GESTIONNAIRE PAIE AVANCEE.html">GESTIONNAIRE
+        PAIE AVANCEE</a></li>
+  </ul>
+
+  <form>
+
+    <fieldset>
+      <legend><input type="checkbox" checked disabled onclick="return false;"><strong>Général</strong></legend>
+      <legend><input type="checkbox" onclick="return false;">Autoriser la création de ticket</legend>
+    </fieldset>
+
+    <fieldset>
+      <legend><input type="checkbox" checked onclick="return false;"><strong>Production</strong></legend>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Suivi des FPOC</legend>
+        <legend><input type="checkbox" onclick="return false;">Télécharger plus de FPOC</legend>
+        <legend><input type="checkbox" onclick="return false;">Afficher les FPOC non rattachés à un dossier
+        </legend>
+      </fieldset>
+    </fieldset>
+
+    <fieldset>
+      <legend><input type="checkbox" onclick="return false;"><strong>Dossier de paie</strong></legend>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Général</legend>
+        <fieldset>
+          <legend><input type="checkbox" onclick="return false;">Fiche société</legend>
+          <legend><input type="checkbox" onclick="return false;">Accès modification état dossier de paie
+            (décoché = accès en lecture seule ; coché = accès complet)</legend>
+
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Paramétrage</legend>
+        <fieldset>
+          <legend><input type="checkbox" onclick="return false;">Bouton P (Paramétrage)</legend>
+          <legend><input type="checkbox" onclick="return false;">Autororiser accès à la liaison comptable
+          </legend>
+          <legend><input type="checkbox" onclick="return false;">Autororiser accès aux variables à saisir
+          </legend>
+          <legend><input type="checkbox" onclick="return false;">Autororiser accès aux contrats
+            complémentaires</legend>
+          <legend><input type="checkbox" onclick="return false;">Autororiser accès aux méthodes</legend>
+          <legend><input type="checkbox" onclick="return false;">Autororiser accès aux menus import / export
+            de paramétrages</legend>
+
+          <fieldset>
+            <legend><input type="checkbox" onclick="return false;">Cotisations</legend>
+            <legend><input type="checkbox" onclick="return false;">Autororiser accès aux compléments libéllés
+            </legend>
+            <legend><input type="checkbox" onclick="return false;">Autororiser accès aux taux</legend>
+            <legend><input type="checkbox" onclick="return false;">Autororiser accès aux taux applicables au
+              dossier</legend>
+            <legend><input type="checkbox" onclick="return false;">Autororiser accès aux taux AT</legend>
+            <legend><input type="checkbox" onclick="return false;">Accès aux modifications des taux
+              applicables au dossier (décoché = accès en lecture seule ; coché = accès complet)</legend>
+          </fieldset>
+
+
+          <fieldset>
+            <legend><input type="checkbox" onclick="return false;">Primes</legend>
+            <legend><input type="checkbox" onclick="return false;">Autororiser accès aux primes</legend>
+            <legend><input type="checkbox" onclick="return false;">Autororiser accès aux catactéristiques
+            </legend>
+          </fieldset>
+
+          <fieldset>
+            <legend><input type="checkbox" onclick="return false;">Heures</legend>
+            <legend><input type="checkbox" onclick="return false;">Autororiser accès aux heures</legend>
+            <legend><input type="checkbox" onclick="return false;">Autororiser accès au complément libéllé
+            </legend>
+          </fieldset>
+
+          <fieldset>
+            <legend><input type="checkbox" onclick="return false;">Montants Particuliers</legend>
+            <legend><input type="checkbox" onclick="return false;">Autororiser accès aux montants
+              particuliers</legend>
+            <legend><input type="checkbox" onclick="return false;">Autororiser accès aux montants
+              particuliers applicables au dossier</legend>
+            <legend><input type="checkbox" onclick="return false;">Accès aux montants particuliers
+              applicables au dossier (décoché = accès en lecture seule ; coché = accès complet)</legend>
+          </fieldset>
+          <legend><input type="checkbox" onclick="return false;">Editions historiques</legend>
+          <fieldset>
+            <legend><input type="checkbox" onclick="return false;">Editions historiques utilisateur</legend>
+            <legend><input type="checkbox" onclick="return false;">Historique des action des éditions historiques
+              utilisateur</legend>
+          </fieldset>
+
+
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Outils</legend>
+        <fieldset>
+          <legend><input type="checkbox" onclick="return false;">Bouton Outils</legend>
+
+          <legend><input type="checkbox" onclick="return false;">Suppressions des données</legend>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">DSN</legend>
+        <legend><input type="checkbox" onclick="return false;">DSN - Régularisations manuelles</legend>
+      </fieldset>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Relation client</legend>
+        <legend><input type="checkbox" onclick="return false;">Autororiser accès à l&#x27;archivage des
+          dossiers</legend>
+        <legend><input type="checkbox" onclick="return false;">Accès à mySilae (décoché = accès en lecture
+          seule ; coché = accès complet)</legend>
+        <legend><input type="checkbox" onclick="return false;">Accès aux contacts (décoché = accès en lecture
+          seule ; coché = accès complet)</legend>
+        <legend><input type="checkbox" onclick="return false;">Accès aux tâches à réaliser (décoché = accès
+          en lecture seule ; coché = accès complet)</legend>
+        <legend><input type="checkbox" onclick="return false;">Accès au cycle de paie (décoché = accès en
+          lecture seule ; coché = accès complet)</legend>
+        <legend><input type="checkbox" onclick="return false;">Accès à l&#x27;automatisation des déclarations
+          (décoché = accès en lecture seule ; coché = accès complet)</legend>
+        <legend><input type="checkbox" onclick="return false;">Accès aux éditions groupées (décoché = accès
+          en lecture seule ; coché = accès complet)</legend>
+        <legend><input type="checkbox" onclick="return false;">Autoriser l&#x27;acès à la synthèse du cycle
+          de paie</legend>
+        <legend><input type="checkbox" onclick="return false;">Autoriser l&#x27;acès au paramétrage du cycle
+          de paie</legend>
+        <legend><input type="checkbox" onclick="return false;">Autoriser l&#x27;acès aux taches planifiées
+        </legend>
+      </fieldset>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Gestion</legend>
+        <fieldset>
+          <legend><input type="checkbox" onclick="return false;">Paramétrage</legend>
+          <legend><input type="checkbox" onclick="return false;">Imputations analytiques</legend>
+          <legend><input type="checkbox" onclick="return false;">Analytique en pourcentage</legend>
+        </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Contrôle et sécurité</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Historique modifications</legend>
+      </fieldset>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Module de simulation</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Bloquer l&#x27;accès au module de simulation
+        </legend>
+
+        <legend><input type="checkbox" onclick="return false;">Bloquer la validations des salariés
+          simulation</legend>
+      </fieldset>
+    </fieldset>
+    <fieldset>
+      <legend><input type="checkbox" checked disabled onclick="return false;"><strong>Gestion interne</strong></legend>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Paramétrage</legend>
+        <fieldset>
+          <legend><input type="checkbox" onclick="return false;">Clients</legend>
+          <fieldset>
+            <legend><input type="checkbox" onclick="return false;">Gestion client</legend>
+            <legend><input type="checkbox" onclick="return false;">Autoriser la suppression</legend>
+            <legend><input type="checkbox" onclick="return false;">Autororiser la réintialisation des clés
+              d'accès au dossiers</legend>
+            <legend><input type="checkbox" onclick="return false;">Autoriser la configuration API - Fichier
+              virement</legend>
+            <legend><input type="checkbox" onclick="return false;">Autoriser la configuration API - Accès API
+              dossier</legend>
+
+          </fieldset>
+        </fieldset>
+        <legend><input type="checkbox" onclick="return false;">Suppression de dossiers</legend>
+        <legend><input type="checkbox" onclick="return false;">Agences</legend>
+        <legend><input type="checkbox" onclick="return false;">Paramétrage des clés d&#x27;accès aux
+          dossiers</legend>
+        <legend><input type="checkbox" onclick="return false;">Affectation rapide des collaborateurs
+        </legend>
+        <legend><input type="checkbox" onclick="return false;">Gestion des regroupements de SIREN</legend>
+      </fieldset>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Analyse production</legend>
+        <legend><input type="checkbox" onclick="return false;">Synthétique</legend>
+        <legend><input type="checkbox" onclick="return false;">Détaillé</legend>
+        <legend><input type="checkbox" onclick="return false;">N4DS</legend>
+      </fieldset>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Infos clients</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Infos clients</legend>
+        <legend><input type="checkbox" onclick="return false;">Infos bancaires</legend>
+      </fieldset>
+      <legend><input type="checkbox" onclick="return false;">Visualisation Contacts</legend>
+
+    </fieldset>
+    </fieldset>
+    <fieldset>
+      <legend><input type="checkbox" onclick="return false;"><strong>Admin. Collaborateurs</strong></legend>
+    </fieldset>
+    <fieldset>
+      <legend><input type="checkbox" onclick="return false;"><strong>Paramétrage de la paie commun à tous les
+          dossiers</strong></legend>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">API</legend>
+        <legend><input type="checkbox" onclick="return false;">Autoriser l&#x27;accès à la configuration
+          API</legend>
+        <legend><input type="checkbox" onclick="return false;">Autoriser l&#x27;accès à l&#x27;écran de
+          bloquage de la génération des fichiers de virements</legend>
+      </fieldset>
+      <legend><input type="checkbox" onclick="return false;">Services intégrés</legend>
+    </fieldset>
+    <fieldset>
+      <legend><input type="checkbox" onclick="return false;"><strong>Robot de paie</strong></legend>
+
+    </fieldset>
+    <fieldset>
+      <legend><input type="checkbox" onclick="return false;"><strong>Outils</strong></legend>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Paie</legend>
+        <fieldset>
+          <legend><input type="checkbox" onclick="return false;">Export V2</legend>
+
+          <legend><input type="checkbox" onclick="return false;">Autoriser l&#x27;export non chiffré
+          </legend>
+        </fieldset>
+        <legend><input type="checkbox" onclick="return false;">Export de dossier</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Import de dossier</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Import de dossier démo</legend>
+      </fieldset>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;"><strong>Centre de notifications</strong>
+        </legend>
+      </fieldset>
+
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;"><strong>Analyse de l&#x27;activité</strong></legend>
+
+        <legend><input type="checkbox" onclick="return false;">Spécificités</legend>
+
+        <fieldset>
+          <legend><input type="checkbox" onclick="return false;">Production</legend>
+          <fieldset>
+            <legend><input type="checkbox" onclick="return false;">Analyse</legend>
+
+            <legend><input type="checkbox" onclick="return false;">Autoriser accès au menu Analyse de
+              l&#x27;activité par collaborateur</legend>
+
+            <legend><input type="checkbox" onclick="return false;">Autoriser accès au menu Analyse de
+              l&#x27;activité par identification utilisateur</legend>
+
+
+          </fieldset>
+        </fieldset>
+        <legend><input type="checkbox" onclick="return false;">Bulletins</legend>
+        <legend><input type="checkbox" onclick="return false;">Dossiers</legend>
+        <legend><input type="checkbox" onclick="return false;">Relation client</legend>
+        <legend><input type="checkbox" onclick="return false;">DADS-U</legend>
+        <legend><input type="checkbox" onclick="return false;">Infos clients</legend>
+        <legend><input type="checkbox" onclick="return false;">Liste des organismes DSN</legend>
+        <legend><input type="checkbox" onclick="return false;">Recherches</legend>
+      </fieldset>
+    </fieldset>
+    <fieldset>
+      <legend><input type="checkbox" onclick="return false;"><strong>Administration</strong></legend>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Accès et sécurité</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Connexions des collaborateurs</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Connexions spécifique des contacts</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Gestion des fournisseurs d&#x27;identité
+          d&#x27;authentification externe</legend>
+
+      </fieldset>
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Pilotage de l&#x27;activité</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Historique connexions</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Historique modifications</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Bloquage appelants</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Comptes Bloqués</legend>
+
+      </fieldset>
+      <legend><input type="checkbox" onclick="return false;">Configuration des serveurs d&#x27;exports
+      </legend>
+
+      <fieldset>
+        <legend><input type="checkbox" onclick="return false;">Paramétrages</legend>
+
+        <legend><input type="checkbox" onclick="return false;">Paramètres avancés</legend>
+        <legend><input type="checkbox" onclick="return false;">Personnalisation écran connexion Domaine</legend>
+        <legend><input type="checkbox" onclick="return false;">Marque grise</legend>
+      </fieldset>
+    </fieldset>
+    </fieldset>
+    <fieldset>
+      <legend><input type="checkbox" checked disabled onclick="return false;"><strong>Silae Hub</strong></legend>
+
+      <legend><input type="checkbox" onclick="return false;">Lier Silae Hub ( Onglet Production )
+      </legend>
+    </fieldset>
+    <fieldset>
+      <legend><input type="checkbox" onclick="return false;"><strong>Utilisation API</strong></legend>
+
+      <legend><input type="checkbox" onclick="return false;">Génération de mot de passe alternatif
+      </legend>
+
+
+    </fieldset>
+  </form>
+</body>
+
+</html>
